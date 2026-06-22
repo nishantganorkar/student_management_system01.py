@@ -8,3 +8,10 @@ while True:
     print("4. Exit")
 
     choice = input("Enter your choice :")
+
+   #add student
+    if choice == "1":
+        name = input("Enter student name :")
+        marks = int(input("Enter marks :"))
+        student[name] = marks
+        print(f"{name} Successfully Added!")   
