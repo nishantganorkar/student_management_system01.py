@@ -15,3 +15,11 @@ while True:
         marks = int(input("Enter marks :"))
         student[name] = marks
         print(f"{name} Successfully Added!")   
+
+     #view student
+    elif choice == "2":
+        if not student:
+            print("No Student Found!")
+        else:
+            for name, marks in student.items():
+                print(name, ":", marks)
