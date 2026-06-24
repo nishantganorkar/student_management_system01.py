@@ -23,3 +23,28 @@ while True:
         else:
             for name, marks in student.items():
                 print(name, ":", marks)
+
+
+     #check result
+    elif choice == "3":
+        name = input("Enter student name :")
+
+        if name in student:
+            marks = student[name]
+
+            if marks >= 40:
+                print(f"marks is {marks}\nPASS")
+            else:
+                print(f"marks is {marks}\nFAIL")
+
+        else:
+            print("Student not Found!")
+
+
+    #exit
+    elif choice == "4":
+        print("Exiting....")
+        break
+
+    else:
+        print("In Valid Input...")
